@@ -1,60 +1,90 @@
 body{
-    background-image: url(./images/login.jpeg); 
-    /* background-color: rgb(82, 82, 193); */
-    font-family: Arial, Helvetica, sans-serif;
-      background-repeat: no-repeat; 
-     background-size: cover; 
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/bg\ image.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 1px;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    
 }
 
-.login-box{
-    width: 360px;
-    height: 310px;
-    background-color: white;
-    margin: auto;
-    border-radius: 3px;
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    text-align: center;
+    }
+
+.login-form{
+    position: relative;
+    box-sizing: border-box;
+    padding: 60px 30px;
+    transition: .5s;
+}
+.login-form:hover{
+    /* background: rgba(247, 246, 246, 0.1);
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    background-color: rgb(247, 246, 246, 0.1); */
+}
+
+.login-form h1{
+    margin: 0 0 20px;
+    color: #f5f3f3;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.login-form input{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    background: rgba(225,225,225,.1);
+}
+
+.login-form input::placeholder{
+    color: #fff;
+}
+
+.login-form input[type="submit"]{
+    color: #fff;
+    background: #0072ff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover{
+    background: #005aca;
+}
+
+.login-form a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .login{
-    text-align: center;
-    padding-top: 15px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    border-radius: 15px;
+    padding: 10px 60px;
 }
-
-.total{
-    width: 300px;
-    margin-left: 20px;
-}
-
-form label{
-    display: flex;
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-form input{
-    width: 100%;
-    padding: 7px;
-    border: none;
-    border: 1px solid gray;
-    border-radius: 6px;
-    outline: none;
-}
-
-.button1{
-    width: 320px;
-    height: 35px;
-    margin-top: 35px;
-    border: none;
-    background-color: rgb(63, 119, 7);
-    color: white;
-}
-
-.last{
-    text-align: center;
-    color: white;
-    padding-top: -10px;
-    font-size: 15px;
-}
-
-.last a{
-    color:  rgb(243, 2, 2);
+.forgot{
+    position: relative;
+    top: 20px;
 }
